@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Destino de Pandora - Aventura Gráfica Interactiva</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-box-seam me-2"></i>
+                El Destino de Pandora
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tematica">Temática</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proceso">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-jugar-nav" href="#juego">
+                            <i class="bi bi-play-circle me-1"></i>Jugar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="hero-content">
+                        <h1 class="display-2 mb-4 hero-title">El Destino de Pandora</h1>
+                        <div class="hero-divider mx-auto mb-4"></div>
+                        <p class="lead hero-subtitle mb-5">
+                            Una elección sellará el destino de la humanidad
+                        </p>
+                        <p class="hero-description mb-5">
+                            Sumérgete en el mito griego de Pandora, donde tus decisiones determinarán 
+                            si la esperanza prevalece o el caos consume al mundo.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#juego" class="btn btn-primary btn-lg me-3">
+                                <i class="bi bi-play-circle-fill me-2"></i>Comenzar Aventura
+                            </a>
+                            <a href="#tematica" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-book me-2"></i>Conocer el Mito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#tematica">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre la Temática -->
+    <section id="tematica" class="py-5 section-dark">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-title mb-3">
+                        <i class="bi bi-book-half me-2"></i>
+                        Sobre la Temática
+                    </h2>
+                    <div class="title-divider mx-auto mb-4"></div>
+                    <p class="section-subtitle">El Mito de Pandora en la Mitología Griega</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="tematica-image">
+                        <img src="assets/imagenes/pandora1.png" alt="Pandora" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tematica-text">
+                        <h3 class="mb-4">La Primera Mujer</h3>
+                        <p class="lead mb-3">
+                            Los dioses del Olimpo forjaron a Pandora con sus propias manos. 
+                            Hefesto moldeó su cuerpo de arcilla, Atenea le dio vida y sabiduría, 
+                            Afrodita le otorgó belleza incomparable.
+                        </p>
+                        <p>
+                            Fue creada como la primera mujer, un regalo divino... o quizás una trampa 
+                            para la humanidad. Zeus le entregó una misteriosa caja con una advertencia: 
+                            <em>"Jamás la abras, Pandora. Lo que contiene no debe ver la luz"</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card bg-dark-transparent border-gold">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3">
+                                <i class="bi bi-box2-heart me-2"></i>
+                                La Caja de Pandora
+                            </h4>
+                            <p class="card-text">
+                                Nuestra aventura gráfica explora las consecuencias de la curiosidad y el 
+                                poder de las decisiones. A través de múltiples caminos narrativos, experimentarás 
+                                diferentes finales basados en tus elecciones: desde preservar la paz del mundo 
+                                hasta desatar el caos eterno, o encontrar la esperanza en medio de la oscuridad.
+                            </p>
+                            <p class="card-text mb-0">
+                                Cada decisión tiene peso. Cada elección modifica el destino. ¿Resistirás la tentación 
+                                o liberarás los males sobre el mundo?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Producción -->
+    <section id="proceso" class="py-5 section-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-title mb-3">
+                        <i class="bi bi-cpu me-2"></i>
+                        Proceso de Producción
+                    </h2>
+                    <div class="title-divider mx-auto mb-4"></div>
+                    <p class="section-subtitle">Creación con Inteligencia Artificial y Programación Interactiva</p>
+                </div>
+            </div>
+
+            <!-- Accordion de Proceso -->
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion accordion-custom" id="procesoAccordion">
+                        
+                        <!-- IA en Imágenes -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseIA">
+                                    <i class="bi bi-image me-2"></i>
+                                    Inteligencia Artificial en Imágenes
+                                </button>
+                            </h2>
+                            <div id="collapseIA" class="accordion-collapse collapse show" 
+                                 data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="mb-3">¿Para qué se utilizó la IA?</h5>
+                                    <p>
+                                        En nuestro proyecto, la inteligencia artificial fue una herramienta fundamental 
+                                        para dar vida visual a la mitología griega. Utilizamos <strong>Google Gemini</strong> 
+                                        y otras herramientas de generación de imágenes para crear las escenas que 
+                                        acompañan cada momento de la historia.
+                                    </p>
+                                    <p class="mb-4">
+                                        La IA nos ayudó a desarrollar múltiples finales narrativos, generar conceptos 
+                                        visuales coherentes con la estética del mito, y crear una atmósfera inmersiva 
+                                        que transporta al jugador al mundo del Olimpo.
+                                    </p>
+
+                                    <h6 class="mb-3">Ejemplos de imágenes generadas:</h6>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="ia-image-card">
+                                                <img src="assets/imagenes/pandora5.png" alt="Pandora contemplando la caja" 
+                                                     class="img-fluid rounded">
+                                                <p class="mt-2 small text-center">Pandora contempla la caja misteriosa</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ia-image-card">
+                                                <img src="assets/imagenes/pandora6.png" alt="Los males escapando" 
+                                                     class="img-fluid rounded">
+                                                <p class="mt-2 small text-center">Los males escapan de la caja</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ia-image-card">
+                                                <img src="assets/imagenes/pandora11.png" alt="La esperanza" 
+                                                     class="img-fluid rounded">
+                                                <p class="mt-2 small text-center">Elpis, la Esperanza que permanece</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Proceso de Programación -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseProgramacion">
+                                    <i class="bi bi-code-slash me-2"></i>
+                                    Proceso de Programación
+                                </button>
+                            </h2>
+                            <div id="collapseProgramacion" class="accordion-collapse collapse" 
+                                 data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="mb-3">Desarrollo Técnico</h5>
+                                    <p>
+                                        La aventura gráfica fue desarrollada utilizando <strong>p5.js</strong>, 
+                                        una biblioteca de JavaScript que facilita la creación de experiencias 
+                                        visuales e interactivas en la web.
+                                    </p>
+
+                                    <div class="programming-steps">
+                                        <div class="step mb-4">
+                                            <h6><i class="bi bi-1-circle me-2"></i>Generación de Assets</h6>
+                                            <p>
+                                                Creación de 14 imágenes con IA organizadas en un array para su carga 
+                                                y gestión eficiente mediante la función <code>preload()</code>.
+                                            </p>
+                                        </div>
+
+                                        <div class="step mb-4">
+                                            <h6><i class="bi bi-2-circle me-2"></i>Sistema de Sonido</h6>
+                                            <p>
+                                                Implementación de música de fondo adaptativa usando la librería 
+                                                <strong>p5.sound</strong>, con diferentes tracks para:
+                                            </p>
+                                            <ul>
+                                                <li>Música de fondo general (<code>musicaDefault</code>)</li>
+                                                <li>Final bueno (<code>musicaFinalBueno</code>)</li>
+                                                <li>Final malo (<code>musicaFinalMalo</code>)</li>
+                                                <li>Sonido de clicks en botones (<code>sonidoClick</code>)</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="step mb-4">
+                                            <h6><i class="bi bi-3-circle me-2"></i>Lógica de Decisiones</h6>
+                                            <p>
+                                                Sistema de ramificación narrativa mediante un array de objetos 
+                                                <code>pantallas[]</code> que contiene 15 pantallas diferentes. 
+                                                Cada pantalla incluye texto narrativo y botones con destinos específicos.
+                                            </p>
+                                        </div>
+
+                                        <div class="step mb-4">
+                                            <h6><i class="bi bi-4-circle me-2"></i>Interactividad con Botones</h6>
+                                            <p>
+                                                Detección de colisiones mediante <code>verificarClick()</code> para 
+                                                los botones interactivos, con efectos hover y estados visuales que 
+                                                mejoran la experiencia del usuario.
+                                            </p>
+                                        </div>
+
+                                        <div class="step">
+                                            <h6><i class="bi bi-5-circle me-2"></i>Múltiples Finales</h6>
+                                            <p>
+                                                Sistema de tracking mediante el array <code>rutaTomada[]</code> que 
+                                                registra las decisiones del jugador y determina cuál de los 4 finales mostrar:
+                                            </p>
+                                            <ul>
+                                                <li><strong>La Resistencia:</strong> Cerrar la caja a tiempo</li>
+                                                <li><strong>La Ruina Eterna:</strong> Rendirse al caos</li>
+                                                <li><strong>La Esperanza Persiste:</strong> Confiar en Elpis</li>
+                                                <li><strong>La Sabiduría:</strong> Ignorar la caja desde el inicio</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4">
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        <strong>Tecnologías utilizadas:</strong> p5.js v1.9.3, p5.sound, JavaScript ES6, 
+                                        HTML5 Canvas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decisiones de Diseño -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseDiseño">
+                                    <i class="bi bi-palette me-2"></i>
+                                    Decisiones de Diseño
+                                </button>
+                            </h2>
+                            <div id="collapseDiseño" class="accordion-collapse collapse" 
+                                 data-bs-parent="#procesoAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="mb-3">Estética y Atmósfera</h5>
+                                    <p>
+                                        El diseño visual de la aventura busca evocar la atmósfera misteriosa 
+                                        y épica de la mitología griega, con una paleta oscura que refuerza 
+                                        la tensión dramática de la narrativa.
+                                    </p>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="design-card">
+                                                <h6><i class="bi bi-palette-fill me-2"></i>Paleta de Colores</h6>
+                                                <div class="color-palette d-flex justify-content-around my-3">
+                                                    <div class="text-center">
+                                                        <div class="color-box" style="background: #8a62b4;"></div>
+                                                        <small>Violeta</small>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <div class="color-box" style="background: #140f23;"></div>
+                                                        <small>Oscuro</small>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <div class="color-box" style="background: #fffaf0;"></div>
+                                                        <small>Marfil</small>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <div class="color-box" style="background: #c83250;"></div>
+                                                        <small>Rojo</small>
+                                                    </div>
+                                                </div>
+                                                <p class="small">
+                                                    Tonos oscuros (#140f23) con violetas místicos (#8a62b4) 
+                                                    para crear una atmósfera sobrenatural.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="design-card">
+                                                <h6><i class="bi bi-fonts me-2"></i>Tipografía</h6>
+                                                <p class="font-display" style="font-family: Georgia, serif; font-size: 1.3rem; margin: 20px 0;">
+                                                    Georgia
+                                                </p>
+                                                <p class="small">
+                                                    Fuente serif clásica que evoca textos antiguos, 
+                                                    proporcionando elegancia y legibilidad a la narrativa.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="py-5 section-dark">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-title mb-3">
+                        <i class="bi bi-people me-2"></i>
+                        Equipo de Desarrollo
+                    </h2>
+                    <div class="title-divider mx-auto mb-4"></div>
+                    <p class="section-subtitle">Los creadores detrás de esta aventura</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Integrante 1 -->
+                <div class="col-md-6">
+                    <div class="team-card">
+                        <div class="team-card-body">
+                            <div class="team-icon mb-3">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <h4 class="team-name">Darkko Nair Jorajuria Etchevarne</h4>
+                            <p class="team-role">Legajo: 122739/6</p>
+                            <div class="team-divider mx-auto my-3"></div>
+                            
+                            <h6 class="mb-2">Rol en la Aventura Gráfica:</h6>
+                            <ul class="team-tasks">
+                                <li>Sistema de navegación entre pantallas</li>
+                                <li>Implementación de la lógica de decisiones</li>
+                                <li>Detección de colisiones para botones</li>
+                                <li>Programación de múltiples finales</li>
+                                <li>Pantalla de créditos y funciones de reinicio</li>
+                            </ul>
+
+                            <h6 class="mb-2 mt-3">Rol en la Página Web:</h6>
+                            <ul class="team-tasks mb-3">
+                                <li>Desarrollo de secciones con Bootstrap</li>
+                                <li>Implementación del navbar responsivo</li>
+                                <li>Integración del juego en el sitio</li>
+                            </ul>
+
+                            <a href="https://youtu.be/mq8bYUWPzSk" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-youtube me-1"></i>Ver Video de Presentación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="col-md-6">
+                    <div class="team-card">
+                        <div class="team-card-body">
+                            <div class="team-icon mb-3">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <h4 class="team-name">Seanna Ursula Sarlangue</h4>
+                            <p class="team-role">Legajo: 122892/5</p>
+                            <div class="team-divider mx-auto my-3"></div>
+                            
+                            <h6 class="mb-2">Rol en la Aventura Gráfica:</h6>
+                            <ul class="team-tasks">
+                                <li>Generación de todas las imágenes con IA</li>
+                                <li>Creación del array de imágenes</li>
+                                <li>Implementación del sistema de sonido</li>
+                                <li>Integración de música adaptativa</li>
+                                <li>Diseño visual y estético del proyecto</li>
+                            </ul>
+
+                            <h6 class="mb-2 mt-3">Rol en la Página Web:</h6>
+                            <ul class="team-tasks mb-3">
+                                <li>Diseño de cards y componentes visuales</li>
+                                <li>Selección de imágenes y contenido</li>
+                                <li>Creación del footer y secciones informativas</li>
+                            </ul>
+
+                            <a href="https://youtu.be/E8nro34AR34" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-youtube me-1"></i>Ver Video de Presentación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info del Curso -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="course-info">
+                        <h5 class="text-center mb-3">
+                            <i class="bi bi-mortarboard me-2"></i>
+                            Información Académica
+                        </h5>
+                        <div class="text-center">
+                            <p class="mb-2">
+                                <strong>Materia:</strong> Programación para Medios Interactivos 
+                                Orientada a las Tecnologías Web
+                            </p>
+                            <p class="mb-2">
+                                <strong>Comisión:</strong> 3
+                            </p>
+                            <p class="mb-0">
+                                <strong>Profesor:</strong> David Bedoian
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Juego -->
+    <section id="juego" class="py-5 section-game">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-title mb-3">
+                        <i class="bi bi-joystick me-2"></i>
+                        Juega Ahora
+                    </h2>
+                    <div class="title-divider mx-auto mb-4"></div>
+                    <p class="section-subtitle">Vive la experiencia completa de El Destino de Pandora</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="game-container">
+                        <div class="game-frame">
+                            <iframe src="juego.html" title="El Destino de Pandora"></iframe>
+                        </div>
+                        <div class="game-instructions mt-4">
+                            <h5><i class="bi bi-info-circle me-2"></i>Instrucciones</h5>
+                            <ul>
+                                <li>Haz clic en los botones para tomar decisiones</li>
+                                <li>Lee cuidadosamente cada escena</li>
+                                <li>Tus elecciones determinarán el final de la historia</li>
+                                <li>Existen 4 finales diferentes para descubrir</li>
+                                <li>El audio se activará al hacer tu primera interacción</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5><i class="bi bi-box-seam me-2"></i>El Destino de Pandora</h5>
+                    <p class="mb-2">
+                        Aventura Gráfica Interactiva basada en el mito griego de Pandora.
+                    </p>
+                    <p class="small text-muted">
+                        Trabajo Final - Programación para Medios Interactivos Web - 2025
+                    </p>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h6>Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#tematica">Temática</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#juego">Jugar</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Desarrolladores</h6>
+                    <ul class="list-unstyled small">
+                        <li>Darkko Jorajuria Etchevarne</li>
+                        <li>Seanna Ursula Sarlangue</li>
+                        <li class="mt-2">
+                            <a href="https://youtu.be/mq8bYUWPzSk" target="_blank">
+                                <i class="bi bi-youtube me-1"></i>Video Darkko
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/E8nro34AR34" target="_blank">
+                                <i class="bi bi-youtube me-1"></i>Video Ursula
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 small">
+                        &copy; 2025 El Destino de Pandora. Creado con Bootstrap 5 para GitHub Pages.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
