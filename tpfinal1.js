@@ -310,10 +310,10 @@ function mousePressed() {
     userStartAudio();
     audioIniciado = true;
 
-    if (musicaDefault && !musicaDefault.isPlaying()) {
-      musicaDefault.loop();
-      musicaDefault.setVolume(0.3);
-      musicaActual = musicaDefault;
+    if (musicaFondo && !musicaFondo.isPlaying()) {
+      musicaFondo.loop();
+      musicaFondo.setVolume(0.3);
+      musicaActual = musicaFondo;
     }
   }
 
@@ -401,5 +401,3 @@ function detenerTodasLasMusicas() {
     musicaFinalMalo.stop();
   }
 }
-
-
